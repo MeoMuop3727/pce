@@ -12,3 +12,4 @@ Subpackages:
 
 from .input import *
 from .object import *
+from .event import *
