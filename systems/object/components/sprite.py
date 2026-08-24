@@ -2,7 +2,7 @@ import pygame
 from typing import Optional
 
 # Engine import
-from ....utils.tools import apply_instance
+from utils.tools import apply_instance
 from .transform import Transform
 
 class Sprite:

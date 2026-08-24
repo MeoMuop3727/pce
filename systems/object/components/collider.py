@@ -2,7 +2,7 @@ import pygame, math
 from typing import Optional
 
 # Engine import
-from ....utils.tools import apply_instance
+from utils.tools import apply_instance
 
 class _Collider:
 
