@@ -2,13 +2,14 @@ from __future__ import annotations
 
 import pygame
 
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Optional
 
 # Engine import
+from ..object.game_object import GameObject, TreeAudio
 if TYPE_CHECKING:
     from .manager import ManagerScene
 
-class Scene:
+class Scene(GameObject):
     """
     Base class for a single screen/state of the game.
 
@@ -18,13 +19,9 @@ class Scene:
     controls scene transitions and lifecycle calls. Subclasses
     override the relevant methods to implement their own logic,
     rendering, input handling, and lifecycle behavior.
-
-    Attributes:
-        (No public attributes; the owning manager is accessible via
-        `self._manager`.)
     """
 
-    def __init__(self, manager: ManagerScene):
+    def __init__(self, manager: ManagerScene, /, audios: Optional[TreeAudio] = None):
         """
         Initializes the scene with a reference to its managing scene manager.
 
@@ -32,6 +29,7 @@ class Scene:
             manager (ManagerScene): The manager responsible for this
                 scene's lifecycle and transitions to/from other scenes.
         """
+        super().__init__(None, audios, None, None, None)
         self._manager = manager
 
     def update(self, dt: float):

@@ -9,9 +9,7 @@ from .components import (
     ConnectionGroup
 )
 from .identify import Identify
-from ...utils.tools import apply_instance, generate_id
-
-__MAX_LENGTH_ID: int = 16
+from utils.tools import apply_instance, generate_id
 
 class GameObject:
     def __init__(self,
@@ -26,7 +24,7 @@ class GameObject:
         self._colliders = apply_instance(ColliderGroup, colliders)
         self._connections = apply_instance(ConnectionGroup, connections)
 
-        self._id = Identify(generate_id(__MAX_LENGTH_ID))
+        self._id = Identify(generate_id(16), "")
 
     def get_id(self) -> str:
         return self._id.id

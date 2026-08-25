@@ -18,3 +18,4 @@ from .input import *
 from .object import *
 from .event import *
 from .scene import *
+from .file import *
