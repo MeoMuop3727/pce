@@ -73,7 +73,7 @@ class EventRegistry:
                 raise KeyError(f"Event {event!r} is not existed")
             self.__list_events.pop(event)
 
-    def get_pygame_events(self) -> list[pygame.Event]:
+    def get_pygame_events(self) -> list[pygame.event.Event]:
 
         """
         Retrieves all pending pygame events from the event queue.
