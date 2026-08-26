@@ -1,10 +1,10 @@
 # PCE — Python Core Engine
 
-![Version](https://img.shields.io/badge/version-0.0.0-orange)
+![Version](https://img.shields.io/badge/version-0.1.0-orange)
 ![License](https://img.shields.io/badge/license-GPLv3-blue)
 ![Status](https://img.shields.io/badge/status-open--source%20%7C%20in%20development-yellow)
 
-> ⚠️ **Note:** PCE is currently at an experimental **0.0.0** version — still under active development, but already usable.
+> ⚠️ **Note:** PCE is currently at an experimental **0.1.0** version — still under active development, but already usable.
 
 ## Overview
 

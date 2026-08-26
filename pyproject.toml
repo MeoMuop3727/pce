@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pce"
+version = "0.1.0"
+description = "PCE (Python Core Engine) — a core game engine built on top of Pygame."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "GPL-3.0-or-later" }
+authors = [
+    { name = "MeoMuop3727" }
+]
+keywords = ["game-engine", "pygame", "engine", "2d"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment",
+    "Topic :: Software Development :: Libraries :: pygame",
+]
+dependencies = [
+    "pygame==2.6.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/MeoMuop3727/pce"
+Repository = "https://github.com/MeoMuop3727/pce.git"
+Issues = "https://github.com/MeoMuop3727/pce/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "black>=24.0",
+    "isort>=5.13",
+    "mypy>=1.10",
+]
+
+[tool.setuptools.packages.find]
+include = ["systems*", "utils*"]
+exclude = ["docs*", "tests*"]
+
+[tool.setuptools.package-data]
+"systems.event" = ["*.pyi"]
