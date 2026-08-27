@@ -20,3 +20,5 @@ loop.
 
 from .manager import ManagerScene
 from .scene import Scene
+
+__all__ = ["Scene", "ManagerScene"]

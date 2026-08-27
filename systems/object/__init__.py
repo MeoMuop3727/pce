@@ -9,3 +9,4 @@ the behavior and appearance of anything placed in a scene.
 
 from .identify import Identify
 from .components import *
+from .game_object import GameObject
