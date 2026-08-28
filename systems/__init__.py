@@ -19,3 +19,4 @@ from .object import *
 from .event import *
 from .scene import *
 from .file import *
+from .font import *
