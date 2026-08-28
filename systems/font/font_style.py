@@ -3,7 +3,7 @@ from typing import Optional, Literal
 
 # Engine import
 from ..object import Transform
-from utils.tools import apply_instance
+from ...utils.tools import apply_instance
 
 class FontStyle:
     def __init__(self,

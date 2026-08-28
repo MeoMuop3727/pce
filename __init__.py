@@ -4,7 +4,7 @@ PCE provides a general set of system components for building a basic Game Engine
 Visual Novel, RPG
 """
 
-from utils import *
-from systems import *
+from .utils import *
+from .systems import *
 
 __version__ = "0.1.0"
