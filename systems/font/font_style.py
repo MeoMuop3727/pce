@@ -7,7 +7,7 @@ from ...utils.tools import apply_instance
 
 class FontStyle:
     def __init__(self,
-                 content: str,
+                 content: str = "",
                  /,
                  font_family: Optional[str] = None,
                  font_size: int = 11,
