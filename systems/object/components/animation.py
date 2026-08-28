@@ -5,8 +5,7 @@ from typing import Optional
 # Engine import
 from .transform import Transform
 from .sprite import Sprite
-from utils.tools import apply_instance
-
+from ....utils.tools import apply_instance
 class _Animation: 
 
     """

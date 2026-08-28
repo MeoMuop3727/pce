@@ -9,8 +9,7 @@ from .components import (
     ConnectionGroup
 )
 from .identify import Identify
-from utils.tools import apply_instance, generate_id
-
+from ...utils.tools import apply_instance, generate_id
 class GameObject:
     def __init__(self,
                  surface: Optional[pygame.Surface] = None,
