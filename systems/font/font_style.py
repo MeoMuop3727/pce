@@ -34,6 +34,9 @@ class FontStyle:
         self._font.underline = self.underline
         self._font.italic = self.italic
 
+    def get_size(self) -> tuple[int, int]:
+        return self._font.size(self.content)
+
     def render(self, 
                surface: pygame.Surface, 
                transform: Optional[Transform] = None,
