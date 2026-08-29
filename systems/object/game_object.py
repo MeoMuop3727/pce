@@ -18,10 +18,10 @@ class GameObject:
                  colliders: Optional[ColliderGroup] = None,
                  connections: Optional[ConnectionGroup] = None):
         self._surface = surface
-        self._audios = apply_instance(TreeAudio, audios)
-        self._animations = apply_instance(TreeAnimation, animations)
-        self._colliders = apply_instance(ColliderGroup, colliders)
-        self._connections = apply_instance(ConnectionGroup, connections)
+        self._audios = apply_instance(TreeAudio(""), audios)
+        self._animations = apply_instance(TreeAnimation(self._surface, ""), animations)
+        self._colliders = apply_instance(ColliderGroup(self._surface, ""), colliders)
+        self._connections = apply_instance(ConnectionGroup(), connections)
 
         self._id = Identify(generate_id(16), "")
 
